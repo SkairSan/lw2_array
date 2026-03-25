@@ -18,4 +18,4 @@ foreach ($matrix as $row) {
 }
 
 echo "\nSum: " . $sum;
-?>
+
