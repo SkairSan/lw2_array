@@ -9,8 +9,14 @@ $number = $arr[0];
 
 for ($i = 1; $i < count($arr); $i++) 
 {
-    if ($arr[$i] === $arr[$i - 1]) $posled++;
-    else $posled = 1;
+    if ($arr[$i] === $arr[$i - 1]) 
+    {
+        $posled++;
+    }
+    else 
+    {
+        $posled = 1;
+    }
     
     if ($posled > $maxposled) 
     {
@@ -21,4 +27,4 @@ for ($i = 1; $i < count($arr); $i++)
 
 echo implode(", ", $arr) . "\n";
 echo "Самая длинная последовательность: ".$maxposled. " раз из числа ".$number;
-?>
+
